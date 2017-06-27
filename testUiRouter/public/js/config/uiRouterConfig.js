@@ -14,6 +14,13 @@ function uiRouterConfig(stateProvider, urlRouterProvider) {
 		}
 	});
 
+	stateProvider.state("home.logout", {
+		url: "/logout",
+		views: {
+			"homeContent@home": { templateUrl: "views/logout.html" }
+		}
+	});
+
 	stateProvider.state("dash", {
 		url: "/dash",
 		views: {
